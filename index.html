@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabeçalho com Menu, Pesquisa e Itens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Lado esquerdo -->
+    <div class="left">
+      <!-- Três pontinhos (agora mais próximos da barra de pesquisa) -->
+      <div class="more-options" onclick="toggleMenu()">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+      <div class="logo">
+        <h1>MegaMart</h1>
+      </div>
+    </div>
+
+    <!-- Barra de Pesquisa (Centro) -->
+    <div class="search-bar">
+      <input type="text" placeholder="Pesquisar produtos...">
+    </div>
+
+    <!-- Lado direito -->
+    <div class="right">
+      <img src="vista-lateral-vazia-do-carrinho-de-compras.png" alt="Carrinho de Compras" class="icon">
+      <button onclick="window.location.href='login.html'">Login</button>
+    </div>
+  </header>
+
+  <!-- Menu lateral (inicialmente oculto) -->
+  <nav id="menu" class="menu-list">
+    <ul>
+      <li><a href="#">Cozinha</a></li>
+      <li><a href="#">Casa</a></li>
+      <li><a href="#">Crianças</a></li>
+      <li><a href="#">Animais</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
